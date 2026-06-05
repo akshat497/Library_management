@@ -1,11 +1,11 @@
-function ToggleSidebar(){
-   let sideBar=document.getElementsByClassName("sideBar");
-   if(sideBar[0].style.width=="0%"){
-    sideBar[0].style.width="15%"
-    sideBar[0].style.transition="0.3s"
-   }else{
-    sideBar[0].style.width="0%"
-    sideBar[0].style.transition="0.3s"
-   }
-   
+function ToggleSidebar() {
+    let sideBar = document.getElementsByClassName("sideBar")[0];
+
+    if (sideBar.style.width === "0%") {
+        sideBar.style.width = "17%";
+    } else {
+        sideBar.style.width = "0%";
+    }
+
+    sideBar.style.transition = "0.3s";
 }
