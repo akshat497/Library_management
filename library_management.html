@@ -1,42 +1,108 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="library_management.css" />
-  </head>
-  <body>
-    <script src="library_management.js"></script>
-    <main>
-      <section>
-        <header class="header">
-          <div>
-            <button
-              id="menu-toggle"
-              class="hamburger-btn"
-              onclick="ToggleSidebar()"
-            >
-              ☰
-            </button>
-          </div>
-          <div>Library Management System</div>
-          <div><input type="text" placeholder="Search..." /></div>
-        </header>
-        <div class="sideBar">
-          <div class="logoCointainer">
-            <div id="Logo">Logo</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="library_management.css">
+</head>
+<body>
 
-            <button
-              id="menu-toggle"
-              class="hamburger-btn"
-              onclick="ToggleSidebar()"
-            >
-              ☰
-            </button>
-          </div>
+    <div class="sideBar" id="sideBar">
+        <div class="logoContainer">
+            <h2>📚 Library</h2>
         </div>
-      </section>
-    </main>
-  </body>
+
+        <div class="profile">
+            <div>Dashboard</div>
+            <div>Books</div>
+            <div>Members</div>
+            <div>Issue Books</div>
+            <div>Return Books</div>
+            <div>Reports</div>
+            <div>Settings</div>
+        </div>
+    </div>
+
+    <div class="main-content">
+
+        <header class="header">
+            <button class="hamburger-btn" onclick="ToggleSidebar()">
+                ☰
+            </button>
+
+            <h2>Library Management System</h2>
+
+            <input type="text" placeholder="Search Books...">
+        </header>
+
+        <div class="dashboard">
+
+            <div class="card">
+                <h3>Total Books</h3>
+                <p>1245</p>
+            </div>
+
+            <div class="card">
+                <h3>Members</h3>
+                <p>856</p>
+            </div>
+
+            <div class="card">
+                <h3>Issued Books</h3>
+                <p>243</p>
+            </div>
+
+            <div class="card">
+                <h3>Overdue Books</h3>
+                <p>18</p>
+            </div>
+
+        </div>
+
+        <div class="table-section">
+            <h2>Recent Transactions</h2>
+
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Member</th>
+                    <th>Book</th>
+                    <th>Status</th>
+                </tr>
+
+                <tr>
+                    <td>TX001</td>
+                    <td>Kanika</td>
+                    <td>Atomic Habits</td>
+                    <td>Issued</td>
+                </tr>
+
+                <tr>
+                    <td>TX002</td>
+                    <td>Neha</td>
+                    <td>Rich Dad Poor Dad</td>
+                    <td>Returned</td>
+                </tr>
+
+                <tr>
+                    <td>TX003</td>
+                    <td>Harsh</td>
+                    <td>The Alchemist</td>
+                    <td>Overdue</td>
+                </tr>
+
+                <tr>
+                    <td>TX004</td>
+                    <td>Sorav</td>
+                    <td>Sapiens</td>
+                    <td>Issued</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+    <script src="library_management.js"></script>
+</body>
 </html>
