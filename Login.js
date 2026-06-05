@@ -93,7 +93,7 @@ let users = [
 let response = {};
 function Login() {
   try {
-    let count = 0;
+   
     let userName = document.getElementById("username");
     let Password = document.getElementById("Password");
     console.log(userName.value, Password.value);
@@ -115,6 +115,7 @@ function Login() {
         status: foundUser.status,
       };
       console.log(response)
+
     } else {
       response.message = "wrong crediantials";
       console.log(response)
