@@ -1,0 +1,58 @@
+.Login{
+    max-height: 60vh;
+    height: 60vh;
+    width: 50vw;
+    border: 2px solid black;
+    box-shadow: 0px 4px 4px 4px gray;
+}
+
+.boxContainer{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#usernameContainer,#passwordContainer{
+
+    display: flex;
+    justify-content: space-between;
+    /* gap: 10px; */
+}
+
+.crediantialContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 40%;
+    justify-content: center;
+    /* align-items: center; */
+    height: calc(100% - 30%);
+    font-size: larger;
+    font-weight: bolder;
+    
+
+}
+
+.crediantialContainer input{
+    height: 100%;
+    width: 100%;
+    border-radius: 1px;
+    padding: 2%;
+
+    
+    border-color: black;
+    border-width: 1px;
+
+
+}
+#Login{
+    font-size: larger;
+    padding: 1%;
+    width: 30%;
+    background-color: #2563eb;
+    color: aliceblue;
+    font-weight: bold;
+    cursor: pointer;
+
+}
