@@ -103,6 +103,11 @@ function Login() {
         user.password == Password.value
       );
     });
+    if (foundUser) {
+    document.getElementById("dashboardLink").click();
+  } else {
+    alert("You entered the wrong email or password");
+  }
 
     if (foundUser) {
       response.message = "Login successfull";
@@ -115,7 +120,6 @@ function Login() {
         status: foundUser.status,
       };
       console.log(response)
-
     } else {
       response.message = "wrong crediantials";
       console.log(response)
@@ -125,3 +129,4 @@ function Login() {
     console.log(error);
   }
 }
+
