@@ -106,6 +106,7 @@ function Login() {
 
     if (foundUser) {
       response.message = "Login successfull";
+      window.location.href = "library_management.html";
       response.userdata = {
         id: foundUser.id,
         name: foundUser.name,
