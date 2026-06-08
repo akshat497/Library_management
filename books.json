@@ -1,0 +1,164 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Harry Potter and the Philosopher's Stone",
+      "author": "J.K. Rowling",
+      "genre": "Fantasy",
+      "available": false,
+      "borrowedBy": "Neha Singh"
+    },
+    {
+      "id": 2,
+      "title": "Harry Potter and the Chamber of Secrets",
+      "author": "J.K. Rowling",
+      "genre": "Fantasy",
+      "available": true,
+      "borrowedBy": null
+    },
+    {
+      "id": 3,
+      "title": "Fantastic Beasts and Where to Find Them",
+      "author": "J.K. Rowling",
+      "genre": "Fantasy",
+      "available": false,
+      "borrowedBy": "Garima Sharma"
+    },
+    {
+      "id": 4,
+      "title": "A Game of Thrones",
+      "author": "George R. R. Martin",
+      "genre": "Epic Fantasy",
+      "available": true,
+      "borrowedBy": null
+    },
+    {
+      "id": 5,
+      "title": "A Clash of Kings",
+      "author": "George R. R. Martin",
+      "genre": "Epic Fantasy",
+      "available": false,
+      "borrowedBy": "Rahul Mehta"
+    },
+    {
+      "id": 6,
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "genre": "Fantasy",
+      "available": true,
+      "borrowedBy": null
+    },
+    {
+      "id": 7,
+      "title": "The Fellowship of the Ring",
+      "author": "J.R.R. Tolkien",
+      "genre": "Fantasy",
+      "available": false,
+      "borrowedBy": "Hosiyar Singh"
+    },
+    {
+      "id": 8,
+      "title": "Dune",
+      "author": "Frank Herbert",
+      "genre": "Science Fiction",
+      "available": true,
+      "borrowedBy": null
+    },
+    {
+      "id": 9,
+      "title": "The Martian",
+      "author": "Andy Weir",
+      "genre": "Science Fiction",
+      "available": false,
+      "borrowedBy": "Neha Singh"
+    },
+    {
+      "id": 10,
+      "title": "Neuromancer",
+      "author": "William Gibson",
+      "genre": "Cyberpunk",
+      "available": true,
+      "borrowedBy": null
+    },
+    {
+      "id": 11,
+      "title": "The Da Vinci Code",
+      "author": "Dan Brown",
+      "genre": "Mystery Thriller",
+      "available": false,
+      "borrowedBy": "Aman Gupta"
+    },
+    {
+      "id": 12,
+      "title": "Murder on the Orient Express",
+      "author": "Agatha Christie",
+      "genre": "Mystery",
+      "available": true,
+      "borrowedBy": null
+    },
+    {
+      "id": 13,
+      "title": "The Hound of the Baskervilles",
+      "author": "Arthur Conan Doyle",
+      "genre": "Detective Fiction",
+      "available": false,
+      "borrowedBy": "Rahul Mehta"
+    },
+    {
+      "id": 14,
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "genre": "Classic Romance",
+      "available": true,
+      "borrowedBy": null
+    },
+    {
+      "id": 15,
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "genre": "Classic Fiction",
+      "available": false,
+      "borrowedBy": "Ritika Malhotra"
+    },
+    {
+      "id": 16,
+      "title": "The Shining",
+      "author": "Stephen King",
+      "genre": "Horror",
+      "available": true,
+      "borrowedBy": null
+    },
+    {
+      "id": 17,
+      "title": "Dracula",
+      "author": "Bram Stoker",
+      "genre": "Gothic Horror",
+      "available": false,
+      "borrowedBy": "Garima Sharma"
+    },
+    {
+      "id": 18,
+      "title": "The Alchemist",
+      "author": "Paulo Coelho",
+      "genre": "Adventure Fiction",
+      "available": true,
+      "borrowedBy": null
+    },
+    {
+      "id": 19,
+      "title": "Atomic Habits",
+      "author": "James Clear",
+      "genre": "Self Help",
+      "available": false,
+      "borrowedBy": "Hosiyar Singh"
+    },
+    {
+      "id": 20,
+      "title": "Sapiens",
+      "author": "Yuval Noah Harari",
+      "genre": "History",
+      "available": true,
+      "borrowedBy": null
+    }
+  ]
+}
