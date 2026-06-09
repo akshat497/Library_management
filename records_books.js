@@ -213,6 +213,27 @@ function displayBooks(data) {
         row.insertCell(4).innerHTML = book.borrowedBy;
         row.insertCell(5).innerHTML = book.borrowedDate;
         row.insertCell(6).innerHTML = book.dueDate;
+
+        row.onclick = function () {
+            let existing = document.getElementById("dropdown_" + book.id);
+            if (existing) {
+                existing.remove();
+            } else {
+                let tr = document.createElement("tr");
+                tr.id = "dropdown_" + book.id;
+                let td = document.createElement("td");
+                td.colSpan = 7;
+                td.innerHTML = '<div style="display:flex; gap:20px; align-items:center;justify-content:center; padding:10px;">' +
+                    '<p>Borrowed By: ' + book.borrowedBy + '</p>' +
+                    '<p>Borrowed Date: ' + book.borrowedDate + '</p>' +
+                    '<p>Due Date: ' + book.dueDate + '</p>' +
+                    '<button class="dropdown-btn">Lend</button>' +
+                    '<button class="dropdown-btn">Edit</button>' +
+                    '</div>';
+                tr.appendChild(td);
+                row.after(tr);
+            }
+        }
     });
 }
 displayBooks(user);
@@ -220,7 +241,12 @@ displayBooks(user);
 function searchBooks() {
     let search = document.getElementById("search_books").value.toLowerCase();
     let results = user.filter(book => {
-        return book.title.toLowerCase().includes(search);
+        let cleanAuthor = book.author.replace(/\./g, "").toLowerCase();
+        let cleanSearch = search.replace(/\./g, "");
+
+        return book.title.toLowerCase().includes(search) ||
+            cleanAuthor.includes(cleanSearch) ||
+            book.genre.toLowerCase().includes(search);
     });
     displayBooks(results);
 }

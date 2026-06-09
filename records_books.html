@@ -21,21 +21,24 @@
 
 
     <div id="search_content">
-        <input type="search" name="search Books" id="search_books" oninput="searchBooks()">
+        <div id="search_books_div">
+            <input type="search" name="search Books" id="search_books" oninput="searchBooks()">
+            <button id="home_btn"><a href="library_management.html">Home</a></button>
+        </div>
         <table id="bookTable">
-           <thead>
-             <tr>
-                <th>Title</th>
-                <th>Author</th>
-                <th>Genre</th>
-                <th>Available</th>
-                <th>Borrowed By</th>
-                <th>Borrowed Date</th>
-                <th>Due Date</th>
-            </tr>
-           </thead>
-           <tbody id="bookTableBody">
-           </tbody>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Genre</th>
+                    <th>Available</th>
+                    <th>Borrowed By</th>
+                    <th>Borrowed Date</th>
+                    <th>Due Date</th>
+                </tr>
+            </thead>
+            <tbody id="bookTableBody">
+            </tbody>
         </table>
     </div>
 

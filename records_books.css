@@ -1,8 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+#search_books_div {
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+}
+
+
 #search_content {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    gap
 }
 
 #search_books {
@@ -22,7 +34,22 @@
     border: 1px solid #2563eb;
 }
 
+#home_btn {
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+}
 
+a {
+    text-decoration: none;
+    color: white;
+}
 
 table {
     width: 100%;
@@ -44,4 +71,13 @@ td {
 
 tr:hover {
     background: #f1f5f9;
+}
+
+.dropdow-btn {
+    font-size: small;
+    width: 5%;
+    background-color: #2563eb;
+    color: aliceblue;
+    font-weight: bold;
+    cursor: pointer;
 }

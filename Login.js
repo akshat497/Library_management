@@ -115,6 +115,7 @@ function Login() {
         status: foundUser.status,
       };
       console.log(response)
+      window.location.href = "library_management.html";
 
     } else {
       response.message = "wrong crediantials";

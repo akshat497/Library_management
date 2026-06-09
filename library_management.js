@@ -9,3 +9,4 @@ function ToggleSidebar() {
 
     sideBar.style.transition = "0.3s";
 }
+
