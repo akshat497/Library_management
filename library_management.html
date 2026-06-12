@@ -8,18 +8,23 @@
 </head>
 <body>
 
+  
+
     <div class="sideBar" id="sideBar">
         <div class="logoContainer">
             <h2>📚 Library</h2>
         </div>
 
         <div class="profile">
-            <div>Dashboard</div>
-            <div>Books</div>
-            <div>Members</div>
-            <div><a href="records_books.html">Manage</a></div>
-            <div>Reports</div>
-            <div>Settings</div>
+            <div class="menu-link">Dashboard</div>
+            <div class="menu-link">Books</div>
+            <div class="menu-link">Members</div>
+            <a href="Issue_books.html" class="menu-link">Issue Books</a>
+            <a href="Return_books.html" class="menu-link">Return Books</a>
+            <div class="menu-link">Reports</div>
+            <div class="menu-link">Settings</div>
+
+            <button class="logout-btn" onclick="logout()">Logout</button>
         </div>
     </div>
 
@@ -39,17 +44,17 @@
 
             <div class="card">
                 <h3>Total Books</h3>
-                <p>1245</p>
+                <p id="totalBooks">1245</p>
             </div>
 
             <div class="card">
                 <h3>Members</h3>
-                <p>856</p>
+                <p id="members">856</p>
             </div>
 
             <div class="card">
                 <h3>Issued Books</h3>
-                <p>243</p>
+                <p id="issuedBooks">243</p>
             </div>
 
             <div class="card">
@@ -58,6 +63,8 @@
             </div>
 
         </div>
+
+        
 
         <div class="table-section">
             <h2>Recent Transactions</h2>
@@ -68,13 +75,17 @@
                     <th>Member</th>
                     <th>Book</th>
                     <th>Status</th>
+                    <th>Due Date</th>
+                    <th>Fine</th>
                 </tr>
 
+            <tbody id="tableBody">
                 <tr>
                     <td>TX001</td>
                     <td>Kanika</td>
                     <td>Atomic Habits</td>
                     <td>Issued</td>
+                    <td>2026-06-10</td>
                 </tr>
 
                 <tr>
@@ -82,6 +93,7 @@
                     <td>Neha</td>
                     <td>Rich Dad Poor Dad</td>
                     <td>Returned</td>
+                    <td>2026-06-01</td>
                 </tr>
 
                 <tr>
@@ -89,6 +101,7 @@
                     <td>Harsh</td>
                     <td>The Alchemist</td>
                     <td>Overdue</td>
+                    <td>2026-06-01</td>
                 </tr>
 
                 <tr>
@@ -96,7 +109,9 @@
                     <td>Sorav</td>
                     <td>Sapiens</td>
                     <td>Issued</td>
+                    <td>2026-06-15</td>
                 </tr>
+            </tbody>
             </table>
         </div>
 

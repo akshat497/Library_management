@@ -1,0 +1,109 @@
+#LoginContainer{
+
+height: 100vh;
+width: 100vw;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+#LoginBox{
+  height: 55%;
+  width: 55%;
+  border-radius:10px ;
+  display: flex;
+  border: 1px solid black;
+  gap:10px
+  
+
+}
+#LoginRight{
+  height: 100%;
+  width: 50%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+
+#LoginRight img{
+  height: 100%;
+  width: 100%;
+  object-fit:cover;
+  border-radius: 10px;
+
+}
+#LoginLeft{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+#btnContainer{
+  width: 85%;
+}
+
+#LoginLeft input{
+  width: 100%;
+  padding: 3%;
+  width: 80%;
+  border-radius: 10px;
+}
+
+#ForgetContainer{
+  display: flex;
+  justify-content: space-between;
+  font-size: small;
+  width: 90%;
+}
+
+#checkBoxContainer{
+  display: flex;
+  width: 50%;
+  align-items: center;
+ 
+
+}
+
+#checkBoxContainer input{
+  height: 30%;
+}
+
+#inputContainer{
+  height: inherit;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+/* https://cdn.dribbble.com/userupload/14898990/file/original-ba68e98ea10e1867e831884c3b153387.png?resize=2048x1536&vertical=center */
+/* #LoginBox input{
+  height: 4vh;
+  border-radius: 10px;
+  outline: none;
+  width: inherit;
+  
+} */
+
+#LoginButton{
+  width: 30%;
+  padding: 3%;
+  background-color: green;
+  color: white;
+  border: none;
+
+}
+
+#SignupText{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+}

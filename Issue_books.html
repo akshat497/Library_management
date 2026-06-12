@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Issue_books.css" />
+    <link rel="stylesheet" href="library_management.css"/>
+</head>
+<body>
+     <div class="modalContainer"> 
+        <div class="modal">
+            <div class="closeBtn" onclick="closeModal()">X</div>
+
+
+        
+
+    </div></div>
+    <div class="sideBar" id="sideBar">
+        <div class="logoContainer">
+            <h2>📚 Library</h2>
+        </div>
+
+        <div class="profile">
+            <a href="./library_management.html" ><div class="menu-link">Dashboard</div></a>
+            <div class="menu-link">Books</div>
+            <div class="menu-link">Members</div>
+            <a href="Issue_books.html" class="menu-link">Issue Books</a>
+            <a href="Return_books.html" class="menu-link">Return Books</a>
+            <div class="menu-link">Reports</div>
+            <div class="menu-link">Settings</div>
+
+            <button class="logout-btn" onclick="logout()">Logout</button>
+        </div>
+    </div>
+   <div class="main-content">
+      <header class="header">
+            <button class="hamburger-btn" onclick="ToggleSidebar()">
+                ☰
+            </button>
+
+            <h2>Library Management System</h2>
+
+            <input type="text" placeholder="Search Books...">
+        </header>
+     <div class="books-section">
+    <h2>Books</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Book</th>
+                <th>Author</th>
+                <th>Status</th>
+                <th>Issued to</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody id="booksTable"></tbody>
+    </table>
+</div>
+
+   </div>
+
+<!-- <a href="library_management.html" class="menu-link">Dashboard</a> -->
+
+       <script src="Issue_books.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+#header,#LoginBtnContainer,#navBtnContainer{
+    gap: 10px;
+    display: flex;
+}
+
+#header{
+    justify-content: space-between;
+    padding: 1%;
+    background-color: rgb(220, 62, 220);
+    color: aliceblue;
+    align-items: center;
+    font-size: large;
+}
+

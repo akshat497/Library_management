@@ -1,0 +1,97 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+/* Main Container */
+.return-books-container{
+    width:90%;
+    margin:30px auto;
+}
+
+/* Heading */
+.return-books-container h2{
+    margin-bottom:20px;
+    color:#0f172a;
+}
+
+/* Table */
+.return-books-container table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Table Header */
+.return-books-container th{
+    background:#2563eb;
+    color:white;
+    padding:15px;
+    text-align:left;
+}
+
+/* Table Data */
+.return-books-container td{
+    padding:15px;
+    border-bottom:1px solid #ddd;
+}
+
+/* Hover Effect */
+.return-books-container tr:hover{
+    background:#f5f5f5;
+}
+
+/* Status */
+.returned{
+    color:green;
+    font-weight:bold;
+}
+
+.issued{
+    color:orange;
+    font-weight:bold;
+}
+
+.overdue{
+    color:red;
+    font-weight:bold;
+}
+
+/* Button */
+.return-btn{
+    background:#28a745;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    border-radius:5px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.return-btn:hover{
+    background:#218838;
+}
+
+/* Back Button */
+.back-btn{
+    display:inline-block;
+    margin-bottom:15px;
+    padding:10px 20px;
+    background:#0f172a;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.back-btn:hover{
+    background:#1e293b;
+}

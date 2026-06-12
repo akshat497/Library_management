@@ -90,6 +90,67 @@ let users = [
     status: "active",
   },
 ];
+
+let books = [
+  {
+    id: 1,
+    name: "Atomic Habits",
+    author: "James Clear",
+    status: "Issued",
+    issuedTo: "Kanika",
+  },
+  {
+    id: 2,
+    name: "Rich Dad Poor Dad",
+    author: "Robert Kiyosaki",
+    status: "Available",
+    issuedTo: "",
+  },
+  {
+    id: 3,
+    name: "The Alchemist",
+    author: "Paulo Coelho",
+    status: "Issued",
+    issuedTo: "Harsh",
+  },
+  {
+    id: 4,
+    name: "Sapiens",
+    author: "Yuval Noah Harari",
+    status: "Issued",
+    issuedTo: "Sorav",
+  },
+  {
+    id: 5,
+    name: "Educated",
+    author: "Tara Westover",
+    status: "Available",
+    issuedTo: "",
+  },
+  {
+    id: 6,
+    name: "The Power of Habit",
+    author: "James Clear",
+    status: "Available",
+    issuedTo: "",
+  },
+];
+
+
+if(!JSON.parse(localStorage.getItem('users'))){
+  localStorage.setItem("users",JSON.stringify(users))
+}else{
+  user=JSON.parse(localStorage.getItem('users'))
+}
+
+if(!JSON.parse(localStorage.getItem('books'))){
+  localStorage.setItem("books",JSON.stringify(books))
+}else{
+  user=JSON.parse(localStorage.getItem('books'))
+}
+
+
+
 let response = {};
 function Login() {
   try {
@@ -106,6 +167,7 @@ function Login() {
 
     if (foundUser) {
       response.message = "Login successfull";
+      window.location.href = "library_management.html";
       response.userdata = {
         id: foundUser.id,
         name: foundUser.name,
